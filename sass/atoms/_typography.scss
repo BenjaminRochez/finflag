@@ -1,0 +1,42 @@
+.ff-title{
+
+  h2{
+    font-weight: bold;
+    font-size: 60px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    span{
+      display: block;
+    }
+  }
+  h2, h3{
+    color: #fff;
+
+    font-family: $raleway;
+  }
+
+  h3{
+    font-size: 40px;
+  }
+}
+
+
+.ff-subtitle{
+  color: $lightblue;
+  font-weight: bold;
+  text-align: center;
+  font-size: 65px;
+  font-family: $raleway;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  span{
+    font-weight: 400;
+    display: block;
+    font-size: 50px;
+  }
+}
+
+p{
+  color: $grey;
+  font-family: $raleway;
+}

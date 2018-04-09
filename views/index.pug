@@ -1,0 +1,150 @@
+include head.pug
+body
+    div.ff-stucked.is-hidden
+        ul.ff-stucked__links
+            li.ff-stucked__link.scrollTo.ff-stucked--how(data-target="#how")
+                span.ff-stucked__text How
+                span.ff-stucked__indicator
+            li.ff-stucked__link.scrollTo.ff-stucked--what(data-target="#what")
+                span.ff-stucked__text What
+                span.ff-stucked__indicator
+            li.ff-stucked__link.scrollTo.ff-stucked--references(data-target="#references")
+                span.ff-stucked__text References
+                span.ff-stucked__indicator
+            li.ff-stucked__link.scrollTo.ff-stucked--contact(data-target="#contact")
+                span.ff-stucked__text Contact
+                span.ff-stucked__indicator
+    nav.ff-nav
+        div.container
+            a.ff-logo
+                img(src="assets/img/logo.png")
+            ul.ff-links
+                li.ff-link.scrollTo(data-target="#how") How
+                li.ff-link.scrollTo(data-target="#what") What
+                li.ff-link.scrollTo(data-target="#references") References
+                li.ff-link.scrollTo(data-target="#contact") Contact
+
+    section.ff-land
+        div.ff-title
+            h2 Radioscopy
+                span of payment means
+            h3 Flash study
+    section.ff-how#how
+        div.ff-wave.ff-wave__top
+            img(src="assets/img/top_wave.png")
+        div.ff-how__container
+            div.container
+                h3 How
+                a.ff-video(href="https://www.youtube.com/watch?v=XSGBVzeBUbk", data-lity)
+                    img.ff-video__illustration(src="assets/img/background.png")
+                    div.ff-youtube
+                        include ../assets/img/play.svg
+
+
+                h4.ff-subtitle.ff-subtitle--card Card & Payments
+                    span A complex industrial landscape
+                div.ff-content.ff-sr__how-content
+                    p Who doesn't need to know exactly how profitable their Card & Payment products are: when launching new products, searching for a more effective target operating model, negociating supplier contracts or simply to gauge performance ? The complexity and volume of data often make it harder to carry out these analyses
+                ul.ff-how__timelines
+                    li.ff-how__timeline.ff-sr__f1
+                        | Card & Transaction
+                        span Unit cost evolution
+                    li.ff-how__timeline.ff-sr__f2
+                        | Internal & External
+                        span Benchmark
+                    li.ff-how__timeline.ff-sr__f3
+                        | Product profitability
+                        span Analysis
+                    li.ff-how__timeline.ff-sr__f4
+                        | Card Portfolio
+                        span Assessment
+                    li.ff-how__timeline.ff-sr__f5
+                        | Target Operating
+                        span Model
+                    li.ff-how__timeline.ff-sr__f6
+                        | Scheme & Processor
+                        span Negociation
+        div.container.ff-container--crunching
+            h4.ff-subtitle.ff-crunching__title A data crunching solution
+                span for the cards & payments industry
+            div.ff-content.ff-content--crunching
+                p.ff-sr__c1 To reduce the time involved in processing all these data and enable more relevant analyses, we have developed a software solution specifically for payments and for processing payment data.
+
+                p.ff-sr__c2 This solution enables us to quickly compile all the available data on relevant aspects of the payments industry. In particular, our tool covers all the components of the industry's value chain, from issuing to acquiring.
+
+    section.ff-what#what
+        div.container
+            h3 What
+            h4.ff-subtitle.ff-sr__w1 Internal and external benchmark
+                span the real call to action
+            div.ff-content.ff-content--what
+                p.ff-sr__w2 With FinFlags and its flash study products, you have all the KPI for your department in record time. The aim of a flash study is not only to shed light on the profitability drivers of your products, but also to compare the performance of one product against another, and against the industry champions.
+                p.ff-sr__w3 The analysis provides you with all the levers you need to better manage your product portfolio, plus uou will feel more comfortable in your discussion with suppliers and will achieve better outcomes.
+
+            button.ff-sr__w4 Brochure
+
+
+
+
+
+    section.ff-references#references
+        div.container
+            h3 References
+            ul.ff-references__container
+                li.ff-reference
+                    img.ff-reference__img(src="assets/img/references/beobank.png")
+                li.ff-reference
+                    img.ff-reference__img(src="assets/img/references/capgemini.png")
+                li.ff-reference
+                    img.ff-reference__img(src="assets/img/references/payconiq.png")
+                li.ff-reference
+                    img.ff-reference__img(src="assets/img/references/bnp_paribas_fortis.png")
+                li.ff-reference
+                    img.ff-reference__img(src="assets/img/references/ingenico.png")
+                li.ff-reference
+                    img.ff-reference__img(src="assets/img/references/mastercard.png")
+                li.ff-reference
+                    img.ff-reference__img(src="assets/img/references/ing.png")
+                li.ff-reference
+                    img.ff-reference__img(src="assets/img/references/bpost.png")
+                li.ff-reference
+                    img.ff-reference__img(src="assets/img/references/febelfin.png")
+                li.ff-reference
+                    img.ff-reference__img(src="assets/img/references/worldline.png")
+                li.ff-reference
+                    img.ff-reference__img(src="assets/img/references/up_monize.png")
+                li.ff-reference
+                    img.ff-reference__img(src="assets/img/references/deutsche_bank.png")
+
+
+    section.ff-contact#contact
+        div.ff-contact__container
+            div.container
+                h3 Contact
+                div.ff-contact__form--sr
+                    form.ff-contact__form.cf
+                        div.ff-contact__input-container
+                            label.ff-contact__label(for="lastname") Last name
+                            input.ff-contact__input#lastname(type="text")
+                        div.ff-contact__input-container
+                            label.ff-contact__label(for="firstname") First name
+                            input.ff-contact__input#firstname(type="text")
+                        div.ff-contact__input-container
+                            label.ff-contact__label(for="company") Company
+                            input.ff-contact__input#company(type="text")
+                        div.ff-contact__input-container
+                            label.ff-contact__label(for="email") Email
+                            input.ff-contact__input#email(type="email")
+                        div.ff-contact__input-container
+                            label.ff-contact__label(for="textarea") Message
+                            textarea.ff-contact__input#textarea
+                        button.ff-submit submit
+
+
+footer.cf
+    div.ff-wave.ff-wave__bottom
+        img(src="assets/img/footer_wave.png")
+    small Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium amet, consequuntur earum eligendi eveniet fugiat iste magni officiis, quidem, rem suscipit ut voluptatum? Numquam odio praesentium quisquam ullam vel!
+
+
+include footer.pug
